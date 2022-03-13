@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MSAL4Sample</display-name>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>com.mylearnings.msalwebsample.AuthFilter</filter-class>
+    <init-param>
+      <param-name>client_id</param-name>
+      <param-value><Azure-clientId></param-value>
+    </init-param>
+    <init-param>
+      <param-name>secret_key</param-name>
+      <param-value>Azure-SecretKey</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
