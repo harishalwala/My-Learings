@@ -1,5 +1,11 @@
 package com.mylearnings.office365.mail;
 
+/*
+	Code is compiled and run using OpenJDK 13 and following jars.
+	--activation-1.1.1.jar
+	--mail1-1.4.7.jar
+*/
+
 import java.util.Properties;
 
 import javax.mail.Authenticator;
